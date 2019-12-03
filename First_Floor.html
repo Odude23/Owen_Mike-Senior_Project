@@ -2,22 +2,71 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="main_css.css">
+        <!-- Bootstrap Example Refrence sheet -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div id="wrapper">
             <div class="header">
-                <h1>Massachusettes College of Liberal Arts</h1>
+                <h1 style="color: white">Massachusettes College of Liberal Arts</h1>
             </div>
             <nav>
                 <a href="Main_touch.html" class="button2">Return to Main</a>
-                <h3>Touchscreen Bowman Map - First Floor</h3>
+                <h3 style="color: #000000">Touchscreen Bowman Map - First Floor</h3>
             </nav>
             <div id="content">
                 <!-- image map of the campus -->
-                <img src="Science_building_placeholder.jpg" alt="color picture" usemap="#map" style="width: 77%; height:30%; border-radius: 8px;" class="center">
+                <img src="Bowman_Level 1.png" alt="color picture" usemap="#map" style="width: 90%; height:35%; border-radius: 8px;" class="center">
                 <map name="map">
-                    <area shape="circle" coords="350,150,75" alt="Mirabar_District" href="Page_4.html">
+                    <area shape="rect" coords="0,30,240,180" alt="comp_sci_offices" class="btn btn-info" data-toggle="modal" data-target="#myModalBlue">
+                    <area shape="rect" coords="300,25,600,200" alt="math_offices" class="btn btn-info" data-toggle="modal" data-target="#myModalPurple">
+                    <area shape="rect" coords="435,0,555,73" alt="comp_sci_lounge">
+                    <area shape="rect" coords="0,0,180,137" alt="comp_sci_offices">
                 </map>
+
+                <!-- Blue Modal -->
+                <div class="modal fade" id="myModalBlue" role="dialog">
+                <div class="modal-dialog blue">
+
+                <!-- Blue Modal content-->
+                <div class="modal-content blue">
+                  <div class="modal-header" style="background-color: #99d9ea;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Room 101 - Computer Science Offices</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Offices of Dr. Wang (a), Dr. Shen (b), Dr. Cohen (d), Dr. Eve (Dept. Chair - e)</p>
+                  </div>
+                  <div class="modal-footer" style="background-color: #99d9ea;">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+                <!-- Purple Modal -->
+                <div class="modal fade" id="myModalPurple" role="dialog">
+                <div class="modal-dialog purple">
+
+                <!-- Puple Modal content-->
+                <div class="modal-content purple">
+                  <div class="modal-header" style="background-color: #99d9ea;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Room 101 - Computer Science Offices</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Offices of Dr. Wang (a), Dr. Shen (b), Dr. Cohen (d), Dr. Eve (Dept. Chair - e)</p>
+                  </div>
+                  <div class="modal-footer" style="background-color: #99d9ea;">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+      </div>
+    </div>
+
             </div>
         </div>
     </body>
